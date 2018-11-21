@@ -1,51 +1,40 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react";
+import "../assets/scss/main.scss";
 
-import Header from './header'
-import './layout.css'
+import Header from "./Header";
+import Footer from "./Footer";
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
+class Template extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        loading: 'is-loading'
       }
-    `}
-    render={data => (
-      <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
-          {children}
-        </div>
-      </>
-    )}
-  />
-)
+    }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+    componentDidMount () {
+      this.timeoutId = setTimeout(() => {
+          this.setState({loading: ''});
+      }, 100);
+    }
+
+    componentWillUnmount () {
+      if (this.timeoutId) {
+          clearTimeout(this.timeoutId);
+      }
+    }
+
+    render() {
+        const { children } = this.props;
+
+        return (
+            <div className={`body ${this.state.loading}`}>
+                <Header />
+                {children}
+                <Footer />
+            </div>
+        );
+    }
 }
 
-export default Layout
+export default Template;
