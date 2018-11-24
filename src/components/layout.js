@@ -1,40 +1,61 @@
-import React from "react";
-import "../assets/scss/main.scss";
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { StaticQuery, graphql } from 'gatsby'
 
-import Header from "./Header";
-import Footer from "./Footer";
+import '../assets/scss/main.scss'
 
-class Template extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        loading: 'is-loading'
-      }
-    }
+const Layout = ({ children, location }) => {
 
-    componentDidMount () {
-      this.timeoutId = setTimeout(() => {
-          this.setState({loading: ''});
-      }, 100);
-    }
+  let content;
 
-    componentWillUnmount () {
-      if (this.timeoutId) {
-          clearTimeout(this.timeoutId);
-      }
-    }
+  if (location && location.pathname === '/') {
+    content = (
+      <div>
+        {children}
+      </div>
+    )
+  } else {
+    content = (
+      <div id="wrapper" className="page">
+        <div>
+          {children}
+        </div>
+      </div>
+    )
+  }
 
-    render() {
-        const { children } = this.props;
-
-        return (
-            <div className={`body ${this.state.loading}`}>
-                <Header />
-                {children}
-                <Footer />
-            </div>
-        );
-    }
+  return (
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
+            }
+          }
+        }
+      `}
+      render={data => (
+        <>
+          <Helmet
+            title={data.site.siteMetadata.title}
+            meta={[
+              { name: 'description', content: 'Sample' },
+              { name: 'keywords', content: 'sample, something' },
+            ]}
+          >
+            <html lang="en" />
+          </Helmet>
+          {content}
+        </>
+      )}
+    />
+  )
 }
 
-export default Template;
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout
