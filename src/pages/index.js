@@ -1,16 +1,23 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-import Layout from '../components/layout';
+import Layout from '../components/layout'
 
-import pic01 from '../assets/images/pic01.jpg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
+
+import pic01 from '../assets/images/services/cloud.png'
+import pic02 from '../assets/images/team/jcabrera.png'
+import pic03 from '../assets/images/team/kmandrup.png'
+import pic04 from '../assets/images/team/dcabrera.png'
+import pic05 from '../assets/images/team/jzambrano.png'
+
+
+import data from '../data/en/data.json'
 
 class Homepage extends React.Component {
     render() {
-        const siteTitle = "Gatsby Starter - Photon";
+        const siteTitle = "Tecla5 site"
+        let imgdev = [pic02,pic03,pic04,pic05]
+
 
         return (
             <Layout>
@@ -20,10 +27,9 @@ class Homepage extends React.Component {
                     <div className="grid-wrapper">
                         <div className="col-6">
                             <header className="major">
-                                <h2>Lorem ipsum dolor adipiscing<br />
-                                amet dolor consequat</h2>
+                                <h2>{data.mission}</h2>
                             </header>
-                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                            <p>{data.home.philosophy1}</p>
                         </div>
                         <div className="col-6">
                             <span className="image fit"><img src={pic01} alt="" /></span>
@@ -45,12 +51,11 @@ class Homepage extends React.Component {
                         </div>
                         <div className="col-6">
                             <header className="major">
-                                <h2>Lorem ipsum dolor adipiscing<br />
-                                amet dolor consequat</h2>
+                                <h2>{data.home.vision1}<br />
+                                {data.home.vision2}</h2>
                             </header>
-                            <p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-                            <p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
-                            <p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
+                            <p>{data.process}</p>
+                            <p>{data.home.textcompetitive}</p>
                         </div>
                     </div>
                 </section>
@@ -59,40 +64,29 @@ class Homepage extends React.Component {
                     <div className="grid-wrapper">
                         <div className="col-12">
                             <header className="major">
-                                <h2>Adipiscing amet consequat</h2>
+                                <h2>{data.team.name}</h2>
                             </header>
-                            <p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
+                            <p>{data.home.heading}</p>
+                            {/* <p>{JSON.stringify(data.team.developers,null,2)}</p> */}
                         </div>
 
-                        <div className="col-4">
-                            <span className="image fit"><img src={pic02} alt="" /></span>
-                            <h3>Magna feugiat lorem</h3>
-                            <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                            <ul className="actions">
-                                <li><a href="#" className="button">More</a></li>
-                            </ul>
-                        </div>
-                        <div className="col-4">
-                            <span className="image fit"><img src={pic03} alt="" /></span>
-                            <h3>Magna feugiat lorem</h3>
-                            <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                            <ul className="actions">
-                                <li><a href="#" className="button">More</a></li>
-                            </ul>
-                        </div>
-                        <div className="col-4">
-                            <span className="image fit"><img src={pic04} alt="" /></span>
-                            <h3>Magna feugiat lorem</h3>
-                            <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                            <ul className="actions">
-                                <li><a href="#" className="button">More</a></li>
-                            </ul>
-                        </div>
-
+                        { data.team.developers.map((dev,i)=>{
+                            return (
+                              <div className="col-3">
+                                <span className="image fit" ><img src={imgdev[i]} alt="" /></span>
+                                <h3>{dev.caption}</h3>
+                                <p>{dev.content}</p>
+                                <ul className="actions">
+                                    <li><a href="#" className="button">More</a></li>
+                                </ul>
+                              </div> 
+                            )
+                          })
+                        }
                     </div>
                 </section>
 
-                <section id="four" className="main style2 special">
+                {/* <section id="four" className="main style2 special">
                     <div className="container">
                         <header className="major">
                             <h2>Ipsum feugiat consequat?</h2>
@@ -103,7 +97,7 @@ class Homepage extends React.Component {
                             <li><a href="#" className="button">Learn More</a></li>
                         </ul>
                     </div>
-                </section>
+                </section> */}
             </Layout>
         );
     }
