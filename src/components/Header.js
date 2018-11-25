@@ -1,15 +1,16 @@
 import React from 'react'
 
+import data from '../data/en/data.json'
+import website_icon from '../assets/images/website-icon.png'
 class Header extends React.Component {
     render() {
         return (
             <section id="header">
                 <div className="inner">
-                    <span className="icon major fa-cloud"></span>
-                    <h1>Hi, I'm <strong>Photon</strong>, another fine<br />
-                    little freebie from <a href="http://html5up.net">HTML5 UP</a>.</h1>
-                    <p>Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
-                    lobortis feugiat sapien sed etiam volutpat accumsan.</p>
+                    <span className="icon major "><img src={website_icon} alt="" /></span>
+                    <h1>{data.mission}<br />
+                    Hi from <a href="http://www.tecla5.com">Tecla5</a>.</h1>
+                    <p>{data.goal}</p>
                     <ul className="actions">
                         <li><a href="#one" className="button scrolly">Discover</a></li>
                     </ul>
