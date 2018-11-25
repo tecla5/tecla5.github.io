@@ -22,7 +22,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build && cp CNAME ./public/",
+    "build": "gatsby build && cp CNAME ./public/ && touch ./public/.nojekyll",
     "develop": "yaml2json src/data/en/data.yaml --pretty > src/data/en/data.json && gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
