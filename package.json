@@ -23,7 +23,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build && cp CNAME ./public/ && touch ./public/.nojekyll",
-    "develop": "yaml2json src/data/en/data.yaml --pretty > src/data/en/data.json && gatsby develop",
+    "data": "echo 'update data yaml to json'",
+    "develop": "npm run data && gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
