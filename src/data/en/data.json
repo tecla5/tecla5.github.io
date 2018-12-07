@@ -1,265 +1,266 @@
 {
-  "mission": "We develop flexible solutions designed to integrate smoothly with your existing business processes and tech stack . We care about your project and take care of it with craftsmanship and a personal touch.",
-  "goal": "Customer satisfaction is our primary goal. We take great pride and care in delivering solutions, using an agile approach, with continual feedback from our clients.",
-  "faces": {
-    "planning": "First we discuss and agree on the scope of the project with the client. From this we are able to break down the project in minor and major milestones to be delivered",
-    "design": "From the plan we can start drafting a design of the system to be implemented. We iterate on the design with the customer until we are in agreement to proceed to implementation",
-    "build": "The application design, business and tech requirements enable us to select the right technology stack for the job. We commit suitable developers to build the solution as specified.",
-    "liftoff": "We build in a test driven, iterative approach. The client can follow the progress in each iteration and provide feedback until the app is ready for release."
-  },
-  "story": "tecla5 started as a consultancy in 2015 in Barcelona. We were a group of experienced developers, project managers and designers who wanted to work together to build great products. We started working for clients in Europe, first in London then in Barcelona. Our specialisation is building components or services that are easy to integrate in existing infrastructure/architecture. Since then we worked for multiple companies, mostly across Europe, delivering responsive web solutions (web/mobile), hybrid apps and various backend services. See our Product and Tech pages for more info.",
-  "stacks": {
-    "JavaScript": "We use the latest JavaScript standards from ECMA 2015 and up.",
-    "TypeScript": "At Tecla we love TypeScript as it provides instant developer feedback. Typescript means increased productivity and less bugs and errors.",
-    "NodeJS": "We like to use NodeJS to develop most micro services.",
-    "Go": "We recommend Go for services that have high performance requirements.",
-    "GCPAWS": "We prefer to deploy services on cloud platforms such as Google (GCP) or Amazon (AWS). ",
-    "DockerKubernetes": "Micro services should run on a containerised platform. We highly recommend using Kubernetes with Docker"
-  },
-  "menu": {
-    "home": "Home",
-    "about": "About",
-    "team": "Team",
-    "services": "Services",
-    "portfolio": "Portfolio",
-    "blog": "Blog",
-    "contact": "Contact"
-  },
-  "footer": {
-    "email": "contact@tecla5.com",
-    "address": "Barcelona/Spain, Caracas/Venezuela."
-  },
-  "about": {
-    "name": "About",
-    "questions": [
-      {
-        "caption": "Who is Tecla5?",
-        "name": "who",
-        "content": "Tecla5 is a software development company with headquarters in Barcelona, Spain. We started as a small team in Barcelona and have now grown to a team spanning the globe. Our engineers are actively researching and working with the latest technologies helping us always provide the best solution available.\n"
-      },
-      {
-        "caption": "Why use Tecla5?",
-        "name": "why",
-        "content": "We have a highly experienced team of professionals and have connections to freelancers around the world. We all work with the latest technologies in the web and app space. We develop a host of SAAS services for the cloud to help you better scale your business.\n"
-      },
-      {
-        "caption": "Micro Services",
-        "name": "micro-services",
-        "content": "Power your apps with data APIs and business logic using micro services for better scalability, flexibility and management.\n"
-      },
-      {
-        "caption": "Applications",
-        "name": "apps",
-        "content": "We develop both multi- and single page web apps (MPAs & SPAs). We build hybrid native apps for iOS and Android.\n\nWe deliver complete front-to-back solutions using our powerful custom tech stack.\n"
-      }
-    ]
-  },
-  "home": {
-    "name": "Home",
-    "image": "http://lorempixel.com/400/200/sports/",
-    "caption": "We turn dreams into reality",
-    "content": "Tecla5 will be ...\n",
-    "launcher": "http://lorempixel.com/600/400/sports/",
-    "welcome": "Welcome to tecla5!",
-    "heading": "Create beautiful websites & Apps using latest the technology",
-    "splash1": "No matter how big your idea",
-    "splash2": "We can craft it into a beautiful solution",
-    "splash3": "Let us take your project to the finish line",
-    "textcompetitive": "Build competitive ideas for your business with us! We help you create responsive web and mobile apps that work across all devices in all environments.",
-    "philosophy1": "We focus on developing a competitive solution for your business, we create responsive web/mobile applications.",
-    "philosophy2": "We care about your project and take it to the next level with a very personal touch.",
-    "vision1": "The Tecla 5 team have the experience and know-how to create powerful solutions, no matter what product, service or business area we develop for.",
-    "vision2": "We are always looking to increase our skillsets with new technologies and are ready for any challenge. We enjoy developing cross-platform applications.",
-    "process": "When we take and understand a project, we dont just complete it, we just complete it, we strive to go beyond and make it even better than requested.",
-    "processlearn": "Learn.",
-    "processplan": "Plan.",
-    "processdesign": "Design.",
-    "processbuild": "Build.",
-    "processlift": "Lift off.",
-    "titleprocess": "Our Process"
-  },
-  "portfolio": [
-    {
-      "caption": "Sports Media Interactive (SMI)",
-      "name": "smi",
-      "image": "/images/toolbar/green.png",
-      "content": "SMI is a betting platform provider with their main offices in London. Tecla5 have been spear-heading their shift to a multi layered application architecture, using the following technologies:\n\n-\tMicro Services\n-\tRapid render: using Marko async server rendering\n-\t...\n"
-    }
-  ],
-  "products": [
-    {
-      "name": "free water",
-      "description": "Show map of taps near to you",
-      "image": "/images/portafolio/projectFW.jpg",
-      "code": "https://github.com/tecla5/free-water"
+    "mission": "We develop flexible solutions designed to integrate smoothly with your existing business processes and tech stack . We care about your project and take care of it with craftsmanship and a personal touch.",
+    "goal": "Customer satisfaction is our primary goal. We take great pride and care in delivering solutions, using an agile approach, with continual feedback from our clients.",
+    "faces": {
+      "planning": "First we discuss and agree on the scope of the project with the client. From this we are able to break down the project in minor and major milestones to be delivered",
+      "design": "From the plan we can start drafting a design of the system to be implemented. We iterate on the design with the customer until we are in agreement to proceed to implementation",
+      "build": "The application design, business and tech requirements enable us to select the right technology stack for the job. We commit suitable developers to build the solution as specified.",
+      "liftoff": "We build in a test driven, iterative approach. The client can follow the progress in each iteration and provide feedback until the app is ready for release."
     },
-    {
-      "name": "homeless",
-      "description": "Sync charity and support for volunteers effort",
-      "image": "/images/portafolio/projectHL.jpg",
-      "code": "https://github.com/tecla5/homeless"
+    "story": "tecla5 started as a consultancy in 2015 in Barcelona. We were a group of experienced developers, project managers and designers who wanted to work together to build great products. We started working for clients in Europe, first in London then in Barcelona. Our specialisation is building components or services that are easy to integrate in existing infrastructure/architecture. Since then we worked for multiple companies, mostly across Europe, delivering responsive web solutions (web/mobile), hybrid apps and various backend services. See our Product and Tech pages for more info.",
+    "stacks": {
+      "JavaScript": "We use the latest JavaScript standards from ECMA 2015 and up.",
+      "TypeScript": "At Tecla we love TypeScript as it provides instant developer feedback. Typescript means increased productivity and less bugs and errors.",
+      "NodeJS": "We like to use NodeJS to develop most micro services.",
+      "Go": "We recommend Go for services that have high performance requirements.",
+      "GCPAWS": "We prefer to deploy services on cloud platforms such as Google (GCP) or Amazon (AWS). ",
+      "DockerKubernetes": "Micro services should run on a containerised platform. We highly recommend using Kubernetes with Docker"
+    },
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "team": "Team",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "footer": {
+      "email": "contact@tecla5.com",
+      "address": "Barcelona/Spain, Caracas/Venezuela."
+    },
+    "about": {
+      "name": "About",
+      "questions": [
+        {
+          "caption": "Who is Tecla5?",
+          "name": "who",
+          "content": "Tecla5 is a software development company with headquarters in Barcelona, Spain. We started as a small team in Barcelona and have now grown to a team spanning the globe. Our engineers are actively researching and working with the latest technologies helping us always provide the best solution available.\n"
+        },
+        {
+          "caption": "Why use Tecla5?",
+          "name": "why",
+          "content": "We have a highly experienced team of professionals and have connections to freelancers around the world. We all work with the latest technologies in the web and app space. We develop a host of SAAS services for the cloud to help you better scale your business.\n"
+        },
+        {
+          "caption": "Micro Services",
+          "name": "micro-services",
+          "content": "Power your apps with data APIs and business logic using micro services for better scalability, flexibility and management.\n"
+        },
+        {
+          "caption": "Applications",
+          "name": "apps",
+          "content": "We develop both multi- and single page web apps (MPAs & SPAs). We build hybrid native apps for iOS and Android.\n\nWe deliver complete front-to-back solutions using our powerful custom tech stack.\n"
+        }
+      ]
+    },
+    "home": {
+      "name": "Home",
+      "image": "http://lorempixel.com/400/200/sports/",
+      "caption": "We turn dreams into reality",
+      "content": "Tecla5 will be ...\n",
+      "launcher": "http://lorempixel.com/600/400/sports/",
+      "welcome": "Welcome to tecla5!",
+      "heading": "Create beautiful websites & Apps using latest the technology",
+      "splash1": "No matter how big your idea",
+      "splash2": "We can craft it into a beautiful solution",
+      "splash3": "Let us take your project to the finish line",
+      "textcompetitive": "Build competitive ideas for your business with us! We help you create responsive web and mobile apps that work across all devices in all environments.",
+      "philosophy1": "We focus on developing a competitive solution for your business, we create responsive web/mobile applications.",
+      "philosophy2": "We care about your project and take it to the next level with a very personal touch.",
+      "vision1": "The Tecla 5 team have the experience and know-how to create powerful solutions, no matter what product, service or business area we develop for.",
+      "vision2": "We are always looking to increase our skillsets with new technologies and are ready for any challenge. We enjoy developing cross-platform applications.",
+      "process": "When we take and understand a project, we dont just complete it, we just complete it, we strive to go beyond and make it even better than requested.",
+      "processlearn": "Learn.",
+      "processplan": "Plan.",
+      "processdesign": "Design.",
+      "processbuild": "Build.",
+      "processlift": "Lift off.",
+      "titleprocess": "Our Process"
+    },
+    "portfolio": [
+      {
+        "caption": "Sports Media Interactive (SMI)",
+        "name": "smi",
+        "image": "/images/toolbar/green.png",
+        "content": "SMI is a betting platform provider with their main offices in London. Tecla5 have been spear-heading their shift to a multi layered application architecture, using the following technologies:\n\n-\tMicro Services\n-\tRapid render: using Marko async server rendering\n-\t...\n"
+      }
+    ],
+    "products": [
+      {
+        "name": "free water",
+        "description": "Show map of taps near to you",
+        "image": "/images/portafolio/projectFW.jpg",
+        "code": "https://github.com/tecla5/free-water"
+      },
+      {
+        "name": "homeless",
+        "description": "Sync charity and support for volunteers effort",
+        "image": "/images/portafolio/projectHL.jpg",
+        "code": "https://github.com/tecla5/homeless"
+      }
+    ],
+    "services": {
+      "name": "Services",
+      "services": [
+        {
+          "image": "images/services/apple-iphone-books-desk.jpg",
+          "caption": "Rapid prototyping",
+          "name": "rapid-prototyping",
+          "content": "We can prototype your site in days, not weeks! We are shaped by a team of professionals striving to develop quality solutions. We work with the latest and greatest technologies in the web space. We specialize in agile development and continuous delivery. We can manage 24/7 development for speedy delivery. We make your dreams come true!\n"
+        },
+        {
+          "image": "images/services/Responsive-design.png",
+          "caption": "WebSite Design & Development",
+          "name": "web-design",
+          "content": "We manage and design the development of your Website. We are specialists at prototyping ideas using our special prototyping tool stack for quick prototyping.\n"
+        },
+        {
+          "image": "images/services/developing-apps.jpg",
+          "caption": "Application development",
+          "name": "app-development",
+          "content": "We develop apps using the latest client/server technologies We can design and develop your apps to work on both Android and iOS mobile.\n"
+        },
+        {
+          "image": "images/services/seo-592747_1280.png",
+          "caption": "SEO y Marketing",
+          "name": "seo",
+          "content": "We Provide Affordable Online Marketing Services for Clients including SEO and PPC (Pay per click). We deliver everything that you need to optimize your website and ensure more sales and business.\n"
+        },
+        {
+          "image": "images/services/qa-testing-online-training.jpg",
+          "caption": "QA & Testing",
+          "name": "testing",
+          "content": "We always deliver to the highest standards. We do Continual Testing during all phases of development.\n"
+        },
+        {
+          "image": "images/services/wordcloud-679950_1280.jpg",
+          "caption": "Cloud services",
+          "name": "cloud",
+          "content": "We will soon be offering the following SAAS services on a subscription basis: Translation Manager, Feature Manager, CMS, Word2HTML, Repo Project Manager.\n"
+        }
+      ]
+    },
+    "partners": {
+      "name": "Partners",
+      "partners": [
+        {
+          "caption": "Sourcerers.ie",
+          "name": "sourcerers",
+          "logo": "partners/logo/sourcerers",
+          "content": "[Sourcerers.ie](sourcerers.ie) is our trusted Indian partner who manage and provide high quality Indian development resources.\n"
+        },
+        {
+          "caption": "Ukraine Mobile devs",
+          "name": "ukraine-1",
+          "logo": "partners/logo/ukraine-1",
+          "content": "Ukraine #1 is a team of highly proficient Ukrainian mobile developers who are our trusted partners for native mobile development.\n"
+        },
+        {
+          "caption": "Ukraine devs",
+          "name": "ukraine-2",
+          "logo": "partners/logo/ukraine-2",
+          "content": "Ukraine 2 is our partner for general purpose app development and front end design...\n"
+        }
+      ]
+    },
+    "team": {
+      "name": "Team",
+      "developers": [
+        {
+          "caption": "Javier Cabrera",
+          "location": "Barcelona, Spain",
+          "image": "images/team/jcabrera.png",
+          "name": "javier-cabrera",
+          "contact": "jcabrera@tecla5.com",
+          "roles": [
+            "Web Architect",
+            "Web/Mobile Developer"
+          ],
+          "technologies": [
+            "Java",
+            "Javascript",
+            "Node.js",
+            "React",
+            "Angular"
+          ],
+          "delivers": [
+            "Web apps",
+            "Mobile (hybrid) apps",
+            "Project management"
+          ],
+          "content": "Javier has ~10 years experience in web app development as a full stack developer and architect. He likes to use the latest technologies to power his apps and is experiences at managing projects and ensuring they can scale while minimizing complexity.\n"
+        },
+        {
+          "caption": "Kristian Mandrup",
+          "location": "London, United Kingdom",
+          "image": "images/team/kmandrup.png",
+          "name": "kristian-mandrup",
+          "contact": "kmandrup@tecla5.com",
+          "roles": [
+            "Web Developer/Architect",
+            "Project manager"
+          ],
+          "technologies": [
+            "Javascript",
+            "Node.js",
+            "React",
+            "Ruby",
+            "Rails"
+          ],
+          "delivers": [
+            "Web architecture",
+            "Project management"
+          ],
+          "content": "Kristian Mandrup has more than 15 years of experience in architecting and developing software and frameworks. He has always enjoyed working with bleeding edge technologies and loves push the limits. Kristian also has a lot of project management experience.\n"
+        },
+        {
+          "caption": "Dayana Cabrera",
+          "location": "Barcelona, Spain",
+          "image": "images/team/dcabrera.png",
+          "name": "dayana-cabrera",
+          "contact": "dcabrera@tecla5.com",
+          "roles": [
+            "Project Manager",
+            "Web Designer/Developer"
+          ],
+          "technologies": [
+            "Javascript",
+            "HTML/CSS",
+            "Bootstrap",
+            "Web Components/Polymer",
+            "Semantic UI",
+            "Stylus"
+          ],
+          "delivers": [
+            "Web apps",
+            "Project management"
+          ],
+          "content": "Dayana is an experienced Project Manager and Designer who specializes in project delivery, customer satisfaction, HR and UX. Dayana has more than ~5 years of experience in developing software and QA Testing.\n"
+        },
+        {
+          "caption": "Jean Zambrano",
+          "location": "Madrid, Spain",
+          "image": "images/team/jzambrano.png",
+          "name": "jean",
+          "contact": "unknown",
+          "roles": [
+            "System Administrator"
+          ],
+          "technologies": [
+            "Virtual Machines",
+            "Docker",
+            "Cloud computing",
+            "Unix"
+          ],
+          "delivers": [
+            "Virtualization technology",
+            "Networking",
+            "OS Administration"
+          ],
+          "content": "Administrador de Infraestructuras"
+        }
+      ]
     }
-  ],
-  "services": {
-    "name": "Services",
-    "services": [
-      {
-        "image": "images/services/apple-iphone-books-desk.jpg",
-        "caption": "Rapid prototyping",
-        "name": "rapid-prototyping",
-        "content": "We can prototype your site in days, not weeks! We are shaped by a team of professionals striving to develop quality solutions. We work with the latest and greatest technologies in the web space. We specialize in agile development and continuous delivery. We can manage 24/7 development for speedy delivery. We make your dreams come true!\n"
-      },
-      {
-        "image": "images/services/Responsive-design.png",
-        "caption": "WebSite Design & Development",
-        "name": "web-design",
-        "content": "We manage and design the development of your Website. We are specialists at prototyping ideas using our special prototyping tool stack for quick prototyping.\n"
-      },
-      {
-        "image": "images/services/developing-apps.jpg",
-        "caption": "Application development",
-        "name": "app-development",
-        "content": "We develop apps using the latest client/server technologies We can design and develop your apps to work on both Android and iOS mobile.\n"
-      },
-      {
-        "image": "images/services/seo-592747_1280.png",
-        "caption": "SEO y Marketing",
-        "name": "seo",
-        "content": "We Provide Affordable Online Marketing Services for Clients including SEO and PPC (Pay per click). We deliver everything that you need to optimize your website and ensure more sales and business.\n"
-      },
-      {
-        "image": "images/services/qa-testing-online-training.jpg",
-        "caption": "QA & Testing",
-        "name": "testing",
-        "content": "We always deliver to the highest standards. We do Continual Testing during all phases of development.\n"
-      },
-      {
-        "image": "images/services/wordcloud-679950_1280.jpg",
-        "caption": "Cloud services",
-        "name": "cloud",
-        "content": "We will soon be offering the following SAAS services on a subscription basis: Translation Manager, Feature Manager, CMS, Word2HTML, Repo Project Manager.\n"
-      }
-    ]
-  },
-  "partners": {
-    "name": "Partners",
-    "partners": [
-      {
-        "caption": "Sourcerers.ie",
-        "name": "sourcerers",
-        "logo": "partners/logo/sourcerers",
-        "content": "[Sourcerers.ie](sourcerers.ie) is our trusted Indian partner who manage and provide high quality Indian development resources.\n"
-      },
-      {
-        "caption": "Ukraine Mobile devs",
-        "name": "ukraine-1",
-        "logo": "partners/logo/ukraine-1",
-        "content": "Ukraine #1 is a team of highly proficient Ukrainian mobile developers who are our trusted partners for native mobile development.\n"
-      },
-      {
-        "caption": "Ukraine devs",
-        "name": "ukraine-2",
-        "logo": "partners/logo/ukraine-2",
-        "content": "Ukraine 2 is our partner for general purpose app development and front end design...\n"
-      }
-    ]
-  },
-  "team": {
-    "name": "Team",
-    "developers": [
-      {
-        "caption": "Javier Cabrera",
-        "location": "Barcelona, Spain",
-        "image": "images/team/jcabrera.png",
-        "name": "javier-cabrera",
-        "contact": "jcabrera@tecla5.com",
-        "roles": [
-          "Web Architect",
-          "Web/Mobile Developer"
-        ],
-        "technologies": [
-          "Java",
-          "Javascript",
-          "Node.js",
-          "React",
-          "Angular"
-        ],
-        "delivers": [
-          "Web apps",
-          "Mobile (hybrid) apps",
-          "Project management"
-        ],
-        "content": "Javier has ~10 years experience in web app development as a full stack developer and architect. He likes to use the latest technologies to power his apps and is experiences at managing projects and ensuring they can scale while minimizing complexity.\n"
-      },
-      {
-        "caption": "Kristian Mandrup",
-        "location": "London, United Kingdom",
-        "image": "images/team/kmandrup.png",
-        "name": "kristian-mandrup",
-        "contact": "kmandrup@tecla5.com",
-        "roles": [
-          "Web Developer/Architect",
-          "Project manager"
-        ],
-        "technologies": [
-          "Javascript",
-          "Node.js",
-          "React",
-          "Ruby",
-          "Rails"
-        ],
-        "delivers": [
-          "Web architecture",
-          "Project management"
-        ],
-        "content": "Kristian Mandrup has more than 15 years of experience in architecting and developing software and frameworks. He has always enjoyed working with bleeding edge technologies and loves push the limits. Kristian also has a lot of project management experience.\n"
-      },
-      {
-        "caption": "Dayana Cabrera",
-        "location": "Barcelona, Spain",
-        "image": "images/team/dcabrera.png",
-        "name": "dayana-cabrera",
-        "contact": "dcabrera@tecla5.com",
-        "roles": [
-          "Project Manager",
-          "Web Designer/Developer"
-        ],
-        "technologies": [
-          "Javascript",
-          "HTML/CSS",
-          "Bootstrap",
-          "Web Components/Polymer",
-          "Semantic UI",
-          "Stylus"
-        ],
-        "delivers": [
-          "Web apps",
-          "Project management"
-        ],
-        "content": "Dayana is an experienced Project Manager and Designer who specializes in project delivery, customer satisfaction, HR and UX. Dayana has more than ~5 years of experience in developing software and QA Testing.\n"
-      },
-      {
-        "caption": "Jean Zambrano",
-        "location": "Madrid, Spain",
-        "image": "images/team/jzambrano.png",
-        "name": "jean",
-        "contact": "unknown",
-        "roles": [
-          "System Administrator"
-        ],
-        "technologies": [
-          "Virtual Machines",
-          "Docker",
-          "Cloud computing",
-          "Unix"
-        ],
-        "delivers": [
-          "Virtualization technology",
-          "Networking",
-          "OS Administration"
-        ],
-        "content": "Administrador de Infraestructuras"
-      }
-    ]
   }
-}
+  
