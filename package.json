@@ -22,8 +22,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build && cp CNAME ./public/ && touch ./public/.nojekyll",
-    "data": "npx js-yaml ./src/data/en.yaml > ./src/data/en.json && echo 'updated data yaml to json'",
+    "data": "npx js-yaml ./src/data/en.yaml > ./src/data/en.json",
+    "build": "gatsby build && cp CNAME ./public/ && touch ./public/.nojekyll && npm run data",
     "develop": "npm run data && gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
