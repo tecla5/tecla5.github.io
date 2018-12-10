@@ -94,10 +94,73 @@
         "code": "https://github.com/tecla5/free-water"
       },
       {
-        "name": "homeless",
-        "description": "Sync charity and support for volunteers effort",
-        "image": "/images/portafolio/projectHL.jpg",
-        "code": "https://github.com/tecla5/homeless"
+        "caption": "Kristian Mandrup",
+        "location": "London, United Kingdom",
+        "image": "images/team/kmandrup.png",
+        "name": "kristian-mandrup",
+        "contact": "kmandrup@tecla5.com",
+        "roles": [
+          "Web Developer/Architect",
+          "Project manager"
+        ],
+        "technologies": [
+          "Javascript",
+          "Node.js",
+          "React",
+          "Ruby",
+          "Rails"
+        ],
+        "delivers": [
+          "Web architecture",
+          "Project management"
+        ],
+        "content": "Kristian Mandrup has more than 15 years of experience in architecting and developing software and frameworks. He has always enjoyed working with bleeding edge technologies and loves push the limits. Kristian also has a lot of project management experience.\n"
+      },
+      {
+        "caption": "Dayana Cabrera",
+        "location": "Barcelona, Spain",
+        "image": "images/team/dcabrera.png",
+        "name": "dayana-cabrera",
+        "contact": "dcabrera@tecla5.com",
+        "roles": [
+          "Project Manager",
+          "Web Designer/Developer"
+        ],
+        "technologies": [
+          "Javascript",
+          "HTML/CSS",
+          "Bootstrap",
+          "Web Components/Polymer",
+          "Semantic UI",
+          "Stylus"
+        ],
+        "delivers": [
+          "Web apps",
+          "Project management"
+        ],
+        "content": "Dayana is an experienced Project Manager and Designer who specializes in project delivery, customer satisfaction, HR and UX. Dayana has more than ~5 years of experience in developing software and QA Testing.\n"
+      },
+      {
+        "caption": "Jean Zambrano",
+        "location": "Madrid, Spain",
+        "image": "images/team/jzambrano.png",
+        "name": "jean",
+        "contact": "unknown",
+        "roles": [
+          "System Administrator"
+        ],
+        "technologies": [
+          "Virtual Machines",
+          "Docker",
+          "Cloud computing",
+          "Unix"
+        ],
+        "delivers": [
+          "Virtualization technology",
+          "Networking",
+          "OS Administration"
+        ],
+        "content": "DevOps engineer. Specialized in Micro Services, AWS, deployment etc"
       }
     ],
     "services": {
