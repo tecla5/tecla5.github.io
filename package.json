@@ -23,7 +23,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build && cp CNAME ./public/ && touch ./public/.nojekyll",
-    "data": "echo 'update data yaml to json'",
+    "data": "npx js-yaml ./src/data/en.yaml > ./src/data/en.json && echo 'updated data yaml to json'",
     "develop": "npm run data && gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
@@ -35,8 +35,7 @@
   "devDependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.9.3",
-    "prettier": "^1.14.2",
-    "yamljs": "^0.3.0"
+    "prettier": "^1.14.2"
   },
   "repository": {
     "type": "git",

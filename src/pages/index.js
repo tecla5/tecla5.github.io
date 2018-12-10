@@ -11,7 +11,7 @@ import pic04 from '../assets/images/team/dcabrera.png'
 import pic05 from '../assets/images/team/jzambrano.png'
 
 
-import data from '../data/en/data.json'
+import data from '../data/en.json'
 
 class Homepage extends React.Component {
     render() {
@@ -77,7 +77,7 @@ class Homepage extends React.Component {
                                 <h3>{dev.caption}</h3>
                                 <p>{dev.content}</p>
                                 <ul className="actions">
-                                    <li><a href="#" className="button">More</a></li>
+                                    <li><a href={dev.website} className="button">More</a></li>
                                 </ul>
                               </div> 
                             )

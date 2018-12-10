@@ -1,9 +1,13 @@
 import React from 'react'
 
-import data from '../data/en/data.json'
+import data from '../data/en.json'
 import website_icon from '../assets/images/website-icon.png'
 class Header extends React.Component {
+    getData(){
+        return data
+    }
     render() {
+        let data = this.getData()
         return (
             <section id="header">
                 <div className="inner">
